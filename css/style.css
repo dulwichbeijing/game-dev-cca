@@ -1,0 +1,219 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
+    margin: 0;
+}
+
+a {
+    color: #fff;
+}
+
+.hero-image {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px 40px 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(../img/bg-small.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+@media screen and (min-width: 800px) {
+    .hero-image {
+        background-image: url(../img/bg-medium.jpg);
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .hero-image {
+        background-image: url(../img/bg-large.jpg);
+    }
+}
+
+.hero-image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0), rgba(60,1,11,1));
+}
+
+.hero-image:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.8rem;
+    background-image: url(../img/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px auto;
+    animation-duration: 3s;
+    animation-name: scrolldown;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes scrolldown{
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
+
+.hero-image__content {
+    position: relative;
+    z-index: 5;
+    text-align: right;
+    color: #ffffff;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.hero-image__content h1 {
+    margin-bottom: 0;
+}
+
+.hero-image__content h2 {
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+.member-list {
+    margin: 20px auto;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;    
+}
+
+.member-list a,
+.member-list .member-intro {
+    display: flex;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 1.2rem;
+    width: calc(50vw - 5px);
+    height: calc(50vw - 5px);
+    text-decoration: none;
+    border: 5px solid #fff;
+}
+
+@media screen and (min-width: 600px) {
+    .member-list a,
+    .member-list .member-intro {
+        width: calc(33vw - 3px);
+        height: calc(33vw - 3px);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .member-list a,
+    .member-list .member-intro {
+        width: calc(20vw - 2px);
+        height: calc(20vw - 2px);
+    }
+}
+
+.member-list .member-intro {
+    background: #2B2D42;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-list a {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.member {
+    background-image: url(../img/user-profile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    position: relative;
+}
+
+.member:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(237, 242, 244, 0.5), rgba(239, 35, 60, 0.95));
+}
+
+.member span {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.footer {
+    background: #2B2D42;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    
+}
+
+.footer__content {
+    margin: auto;
+    padding: 0;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__content p {
+    margin: 0;
+}
+
+@media screen and (max-width: 980px) {
+    .footer__content {
+        padding: 20px;
+    }
+
+    .footer__content p {
+        width: 100%;
+        margin: 5px;
+    }
+}
