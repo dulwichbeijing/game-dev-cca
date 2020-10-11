@@ -135,16 +135,16 @@ a {
 @media screen and (min-width: 600px) {
     .member-list a,
     .member-list .member-intro {
-        width: calc(33vw - 3px);
-        height: calc(33vw - 3px);
+        width: calc(33vw - 5px);
+        height: calc(33vw - 5px);
     }
 }
 
 @media screen and (min-width: 1000px) {
     .member-list a,
     .member-list .member-intro {
-        width: calc(20vw - 2px);
-        height: calc(20vw - 2px);
+        width: calc(20vw - 5px);
+        height: calc(20vw - 5px);
     }
 }
 
