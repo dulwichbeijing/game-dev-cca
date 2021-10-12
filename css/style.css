@@ -110,7 +110,7 @@ a {
     font-weight: normal;
 }
 
-.member-list {
+.project-list {
     margin: 0;
     padding: 0;
     display: flex;
@@ -119,15 +119,15 @@ a {
     list-style: none;    
 }
 
-.member-list li {
+.project-list li {
     display: block;
     width: 50%;
     height: 50vw;
     position: relative
 }
 
-.member-list a,
-.member-list span {
+.project-list a,
+.project-list span {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -147,7 +147,7 @@ a {
 
 
 @media screen and (min-width: 600px) {
-    .member-list li {
+    .project-list li {
         display: block;
         width: 33.3%;
         height: 33vw;
@@ -155,25 +155,25 @@ a {
 }
 
 @media screen and (min-width: 1000px) {
-    .member-list li {
+    .project-list li {
         display: block;
         width: 25%;
         height: 25vw;
     }
 }
 
-.member-list .member-intro {
+.project-list .project-intro {
     background: #2B2D42;
     justify-content: center;
     align-items: center;
 }
 
-.member-list a {
+.project-list a {
     justify-content: flex-end;
     align-items: flex-end;
 }
 
-.member {
+.project {
     background-image: url(../img/user-profile.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -182,11 +182,7 @@ a {
     overflow: hidden;
 }
 
-.member--rigby {
-    background-image: url(../img/jared.svg);
-}
-
-.member:before {
+.project:before {
     content: "";
     position: absolute;
     top: 0;
@@ -197,16 +193,14 @@ a {
     transition: transform 0.4s ease;
 }
 
-.member:hover:before {
+.project:hover:before {
     transform: translateX(-100%)
 }
 
-.member span {
+.project span {
     position: relative;
     z-index: 2;
 }
-
-
 
 .footer {
     background: #2B2D42;
