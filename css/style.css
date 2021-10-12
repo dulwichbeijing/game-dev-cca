@@ -34,6 +34,7 @@ a {
 
 @media screen and (min-width: 800px) {
     .hero-image {
+        height: 50vh;
         background-image: url(../img/bg-medium.jpg);
     }
 }
