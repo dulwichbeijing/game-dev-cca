@@ -93,6 +93,15 @@ a {
     }
 }
 
+.hero-image__icon {
+    display: block;
+    width: 200px;
+    height: auto;
+    z-index: 2;
+    position: relative;
+    top: 50px;
+}
+
 .hero-image__content {
     position: relative;
     z-index: 5;
