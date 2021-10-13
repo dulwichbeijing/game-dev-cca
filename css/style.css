@@ -19,6 +19,10 @@ a {
     color: #fff;
 }
 
+img {
+    max-width: 100%;
+}
+
 .hero-image {
     width: 100vw;
     height: 100vh;
@@ -43,6 +47,10 @@ a {
     .hero-image {
         background-image: url(../img/bg-large.jpg);
     }
+}
+
+.hero-image--game {
+    background-image: url(../img/v882-sasi-31.jpg);
 }
 
 .hero-image:before {
@@ -184,7 +192,7 @@ a {
 }
 
 .project {
-    background-image: url(../img/user-profile.svg);
+    background-image: url(../img/console-icon.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60% auto;
@@ -210,6 +218,11 @@ a {
 .project span {
     position: relative;
     z-index: 2;
+}
+
+.dev-log {
+    margin: 50px auto;
+    max-width: 40rem;
 }
 
 .footer {
