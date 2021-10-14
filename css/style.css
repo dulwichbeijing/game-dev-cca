@@ -202,7 +202,7 @@ img {
     overflow: hidden;
 }
 
-.project .project--ils {
+.project--ils {
     background-image: url(../img/games/ils/ils-tile.png);
     background-size: cover;
 }
