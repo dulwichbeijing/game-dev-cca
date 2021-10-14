@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     overflow-x: hidden;
+    background: #2B2D42;
 }
 
 *, *:before, *:after {
@@ -13,6 +14,7 @@ body {
     "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
     "Helvetica Neue", sans-serif;
     margin: 0;
+    background: #fff;
 }
 
 a {
@@ -223,6 +225,15 @@ img {
 .dev-log {
     margin: 50px auto;
     max-width: 40rem;
+}
+
+.dev-nav {
+    margin: 50px auto;
+    max-width: 40rem;
+}
+
+.dev-nav a {
+    color: rgba(239, 35, 60, 0.95);
 }
 
 .footer {
