@@ -202,6 +202,11 @@ img {
     overflow: hidden;
 }
 
+.project .project--ils {
+    background-image: url(../img/games/ils/ils-tile.png);
+    background-size: cover;
+}
+
 .project:before {
     content: "";
     position: absolute;
