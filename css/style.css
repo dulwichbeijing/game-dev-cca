@@ -135,7 +135,7 @@ img {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     list-style: none;    
 }
 
@@ -166,11 +166,15 @@ img {
 
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 999px) {
     .project-list li {
         display: block;
         width: 33.3%;
         height: 33vw;
+    }
+
+    .project-list li:last {
+        width: 66.6%;
     }
 }
 
