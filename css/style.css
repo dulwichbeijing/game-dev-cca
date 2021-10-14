@@ -173,7 +173,7 @@ img {
         height: 33vw;
     }
 
-    .project-list li:last {
+    .project-list li:last-child {
         width: 66.6%;
     }
 }
