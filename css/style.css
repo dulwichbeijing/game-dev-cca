@@ -215,6 +215,11 @@ img {
     background-size: cover;
 }
 
+.project--spaceship {
+    background-image: url(../img/games/spaceship-game/spaceship-tile.png);
+    background-size: cover;
+}
+
 .project:before {
     content: "";
     position: absolute;
