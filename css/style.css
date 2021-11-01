@@ -55,6 +55,10 @@ img {
     background-image: url(../img/v882-sasi-31.jpg);
 }
 
+.hero-image--spaceship-game {
+    background-image: url(../img/games/spaceship-game/spaceship-1.png);
+}
+
 .hero-image:before {
     content: "";
     position: absolute;
