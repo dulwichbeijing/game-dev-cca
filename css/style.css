@@ -210,6 +210,11 @@ img {
     overflow: hidden;
 }
 
+.project--2d-minecraft {
+    background-image: url(../img/games/2d-minecraft/2d-minecraft.png);
+    background-size: cover;
+}
+
 .project--ils {
     background-image: url(../img/games/ils/ils-tile.png);
     background-size: cover;
