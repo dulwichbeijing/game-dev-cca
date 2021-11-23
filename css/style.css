@@ -25,6 +25,20 @@ img {
     max-width: 100%;
 }
 
+.button {
+    display: inline-block;
+    border-radius: 0.5rem;
+    
+    background: rgba(239, 35, 60, 0.95);
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button:hover, .button:focus {
+    background: #2B2D42;
+}
+
 .hero-image {
     width: 100vw;
     height: 100vh;
