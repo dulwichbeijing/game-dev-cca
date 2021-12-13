@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<header class="hero-image">
+  <div class="hero-image__content">
+    <h1>DCB Game Development</h1>
+    <h2>Tuesday ECA Time - Technology 3</h2>
+  </div>
+</header>
+<main class="post">
+  <ul class="project-list">
+    <li>
+      <span class="project-intro">
+        We are a mix of senior school students interested in building games.
+      </span>
+     </li>
+    {% for game in site.games %}
+      <li>
+        <a href="{{ game.url }}"class="project project--{{ game.class }}">
+          <span>{{ game.name }}</span>
+        </a>
+      </li>
+    {% endfor %}
+    <li>
+      <span class="project-intro">
+        Click on a square to learn more about our projects.
+      </span>
+    </li>
+  </ul>
+</main>

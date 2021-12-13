@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<header class="hero-image hero-image--{{page.class}}">
+  <div class="hero-image__content">
+    <h1>{{ page.name | escape }}</h1>
+    <h2>{{ page.developers | escape }}</h2>
+  </div>
+</header>
+<main>
+
+  <aside class="game-details">
+    <ul>
+      {% if page.engine %}
+      <li><strong>Engine:</strong> {{ page.engine }}</li>
+      {% endif %}
+      {% if page.release %}
+      <li><strong>Development started:</strong> {{ page.release }}</li>
+      {% endif %}
+      {% if page.link %}
+      <li>
+        <a class="button" href="{{ page.link }}">Play it here</a>
+      </li>
+      {% endif %}
+    </ul>
+  </aside>
+
+  {% assign logs = site.dev_logs | where:"class", page.class | reverse %}
+
+  {% for log in logs %}
+  <article class="dev-log">
+    <h3>{{ log.title }}</h3>
+    <span>{{ log.author}} - {{ log.date | date: "%-d %B %Y" }}</span>
+    {{ log.content | markdownify }}
+  </article>
+  {% endfor %}
+</main>

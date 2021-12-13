@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  <head>
+    <title>{{ page.title }} - Dulwich College Beijing Game Development</title>
+    {%- include head.html -%}
+  </head>
+
+  <body>
+    
+    {%- include navigation.html -%}
+
+    {{ content }}
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
