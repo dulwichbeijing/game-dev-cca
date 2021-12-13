@@ -22,8 +22,8 @@ title: Dulwich College Beijing Game Dev
 email: jared.rigby@dulwich.org
 description: >- # this means to ignore newlines until "baseurl:"
   Tuesday ECA time in Technology 3
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/game-dev-eca" # the subpath of your site, e.g. /blog
+url: "https://dulwichbeijing.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 wechat_username: DulwichBeijing北京德威
 github_username: dulwichbeijing
 
