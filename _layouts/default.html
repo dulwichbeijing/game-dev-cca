@@ -2,7 +2,13 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   <head>
-    <title>{{ page.title }} - Dulwich College Beijing Game Development</title>
+    <title>
+      {% if page.title != "home" %}
+      {{ page.title }} - Dulwich College Beijing Game Development
+      {% else %}
+      Dulwich College Beijing Game Development
+      {% endif %}
+    </title>
     {%- include head.html -%}
   </head>
 
