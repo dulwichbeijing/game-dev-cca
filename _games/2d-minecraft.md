@@ -1,5 +1,5 @@
 ---
-name: Scuffed 2D Minecraft
+name: 2D Minecraft
 developers: Kynan C., Stu C., Aim L., Jojo Y.
 engine: Scratch
 release: 2021
